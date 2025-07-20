@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table, tr, th,td {
+            border-style: solid;
+            border-width: 2px;
+            margin: 0px;
+            padding: 0px;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 200px;
+            height: 200px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        tr:hover {
+            background-color: pink;
+        }
+        .ganjil {
+            background-color: green;
+        }
+
+
+        .genap {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+            <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ganjil">
+                <td>Alya</td>
+            <td>100</td>
+            </tr>
+            <tr class="genap">
+                <td>Alya</td>
+            <td>100</td>
+            </tr>
+            <tr class="ganjil">
+                <td>Alya</td>
+            <td>100</td>
+            </tr>
+            <tr class="genap">
+                <td>Alya</td>
+            <td>100</td>
+            </tr>
+            <tr>
+                <td>Alya</td>
+            <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

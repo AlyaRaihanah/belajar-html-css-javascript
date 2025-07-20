@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selctor Target Value</title>
+
+    <style>
+        a[target="_blank"] {
+            color: aqua;
+        }
+
+        p[title~="belajar"] {
+            color: red;
+        }
+
+        p[title |="belajar"] {
+            color: yellowgreen;
+        }
+        p[title ^="main"] {
+            color: blue;
+        }
+
+        p[title$="masak"] {
+            color: blue;
+        }
+
+        [title*="berburu"] {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">Contoh 1</a>
+    <a href="">Contoh 2</a>
+    <a href="" target="_self">Contoh 3</a>
+    <a href="">Contoh 4</a>
+
+
+    <p title="belajar pemrograman">Ini dipilih merah</p>
+    <p title="belajarpemrograman">Ini tidak dipilih merah </p>
+
+    <p title="belajar-pemrograman">Ini dipilih hijau</p>
+    <p title="belajar pemrograman">Ini tidak dipilih hijau</p>
+    <p title="belajar">Ini dipilih hijau</p>
+
+    <p title="main masak">Ini dipilih biru</p>
+    <p title="mainmainan">Ini dipilih biru</p>
+    <p title="pergi main">Ini tidak dipilih biru</p>
+
+    <p title="masak air">Ini tidak dipilih biru</p>
+    <p title="masak nasi">Ini tidak dipilih biru</p>
+    <p title="ibu masak">Ini dipilih biru</p>
+
+    <p title="berburu pemrograman">Ini dipilih pink</p>
+    <p title="berburupemrograman">Ini dipilih pink </p>
+    <p title="berburu-pemrograman">Ini dipilih pink</p>
+    <p title="berburu">Ini dipilih pink</p>
+    <p title="berburumainan">Ini dipilih pink</p>
+    <p title="berburu main">Ini dipilih pink</p>
+    <p title="berburu air">Ini dipilih pink</p>
+    <p title="berburu nasi">Ini dipilih pink</p>
+    <p title="ibu berburu">Ini dipilih pink</p>
+</body>
+</html>

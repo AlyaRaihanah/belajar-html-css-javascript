@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Mode</title>
+    <style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+        div {
+            padding: 0px;
+            margin: 0px;
+            background-color: pink;
+        }
+
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .article1 {
+            height: 200px;
+            background-color: aqua;
+            width: 200px;
+            padding: 10px 20px 10px 20px;
+            text-align: justify;
+            margin: 10px 10px 10px 10px;
+            writing-mode: vertical-lr;
+        }
+
+        .article2 {
+            height: 200px;
+            width: 200px;
+            padding: 10px 20px 10px 20px;
+            margin: 20px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="article1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minima architecto cupiditate deleniti iste sequi placeat esse ullam ad aperiam distinctio quos rem adipisci, in eligendi, animi officia quis aspernatur?</p>
+    </div>
+
+    <div class="article2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit libero ad dignissimos, aperiam, odio vitae dicta nesciunt, accusantium nihil vero tenetur! Nemo, animi. Dolorum, eveniet. Mollitia blanditiis facilis ut eveniet.</p>
+    </div>
+</body>
+</html>
