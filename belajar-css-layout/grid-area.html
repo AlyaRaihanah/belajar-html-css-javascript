@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 100px auto 100px ; 
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas: 
+        "header header header"
+        ". content ."
+        "footer footer footer";
+    }
+
+    .header {
+        background-color: aqua;
+        grid-area: header;
+        
+    }
+
+    .footer {
+        background-color: aqua;
+        grid-area: footer;
+    }
+
+    .content {
+        background-color: khaki;
+        grid-area: content;
+    }
+</style>
+    
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="header">
+            Selamat Datang di Programmer Zaman Now
+        </div>
+
+        <div class="content">
+            <h1>Programmer Zaman Naman Now</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, itaque iste. Voluptas minima laborum repellendus sit a molestiae assumenda ipsum, dolor delectus laudantium commodi reiciendis libero architecto, deserunt ut saepe.</p>
+        </div>
+
+        <div class="footer">
+            Develop by Alya Raihanah
+        </div>
+    </div>
+    
+</body>
+</html>

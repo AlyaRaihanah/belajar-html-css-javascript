@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+
+<style>
+    .menubar {
+        display: inline-block;
+    }
+
+    .menu {
+        background-color: aqua;
+        color: black;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menuList {
+        background-color: bisque;
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+
+    .menuList a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+
+    .menuList a:hover {
+        background-color: white;
+    }
+
+    .menubar:hover .menu {
+        background-color: khaki;
+    }
+
+    .menubar:hover .menuList {
+        display: block;
+    }
+</style>
+
+</head>
+<body>
+    <div class="menubar">
+        <button class="menu">Social Media</button>
+        <div class="menuList">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Tioktok</a>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque minima minus recusandae placeat omnis similique libero id facere repudiandae, sequi odit sunt doloremque maiores quos voluptatum quod inventore? Quae, consequatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque minima minus recusandae placeat omnis similique libero id facere repudiandae, sequi odit sunt doloremque maiores quos voluptatum quod inventore? Quae, consequatur.</p>
+</body>
+</html>
