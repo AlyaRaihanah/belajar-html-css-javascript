@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+
+
+const names = ["Rachel","Monica","Phoebe","Ross","Joey","Chandler"];
+
+//Destructuring Array
+const [firstName, middleName, lastName, ...other] = names;
+
+
+console.info(firstName);
+console.info(middleName);
+console.info(lastName);
+console.info(other);
+
+
+
+const person = {
+    firstName1 : "Seinfield",
+    lastName2 : "George",
+    address : {
+        street : "Yemen St",
+        city : "Yemen",
+        country : "Indonesia"
+    },
+
+    hobby : "Game",
+    channel : "Netflix"
+};
+
+//Destructuring Object
+// const {firstName1, lastName2, ...others} = person;
+// console.info(firstName1);
+// console.info(lastName2);
+// console.info(others);
+
+//Destructuring Nested Object
+const {firstName1, lastName2, address:{city, street, country}, ...others} = person;
+console.info(firstName1);
+console.info(lastName2);
+console.info(city);
+console.info(street);
+console.info(country);
+console.info(others);
+
+//Destructuring Function Parameter
+function displayPerson({firstName3, middleName3, lastName3}) {
+    console.info(firstName3);
+    console.info(middleName3);
+    console.info(lastName3);
+}
+
+const person2 = {
+    firstName3 : "George",
+    middleName3 : "Real",
+    lastName3 : "Constanta"
+};
+
+displayPerson(person2);
+
+{
+    function sum([first, second]) {
+        return first + second;
+    }
+
+    console.info(sum([1,1]));
+    console.info(sum([10,10]));
+}
+
+{
+    //Menambahkan Default Value pada Destructuring
+    const sentence = ["Joey", "Loves", "Eat"];
+    const [word1, word2, word3 = "Acting"] = sentence;
+
+    console.info(word1);
+    console.info(word2);
+    console.info(word3);
+}
+
+{
+    const person = {
+    firstName1 : "Seinfield",
+    lastName2 : "Jerry"
+};
+
+let {firstName1, lastName2 = "George"} = person;
+console.info(firstName1);
+console.info(lastName2);
+
+}
+
+//Destructuring dengan Variable Lain
+
+{
+    const {
+        firstName : namaDepan,
+        middleName : namaTengah = "Muriel",
+        lastName : namaBelakang
+    } = person;
+    
+    console.info(namaDepan);
+    console.info(namaTengah);
+    console.info(namaBelakang);
+}
+
+
+    </script>
+</body>
+</html>
